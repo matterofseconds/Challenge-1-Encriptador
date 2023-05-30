@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+    <script src="https://kit.fontawesome.com/ab728c7c44.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="creativos/Logo.png" alt="logo de alura">
+    </header>
+    <main>
+        <section>
+            <textarea id="textbox1" class="text-area" cols="40" rows="3" placeholder="Ingrese el texto aqui"></textarea>
+            <div>   
+                <h6 class="informacion">
+                    Solo letras minúsculas y sin acentos
+                </h6>
+            </div>
+            <div class="botones">        
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <div id="textSection">
+                <textarea id="textbox"class="mensaje" cols="20" rows="5"></textarea>
+                <p>No se ha encontrado algún texto.</p>
+            </div>
+            <div>
+                <button id="copyButton" class="btn-copiar">Copiar</button>
+                <button id="pasteButton" class="btn-pegar">Pegar</button>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+
+<footer>
+    <p class="copyright">Creado por Erik Morales</p>
+    <div class="redes">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/erik-morales-hinojosa/" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/matterofseconds" class="github"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+    </div>    
+</footer>
+</html>
